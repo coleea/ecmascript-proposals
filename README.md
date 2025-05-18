@@ -4,101 +4,104 @@
 
 Finished proposals are proposals that have reached stage 4, and are included in the [latest draft](https://tc39.es/ecma262/) of the specification.
 
-| Proposal                                                                 | Expected Publication Year |
-| ------------------------------------------------------------------------ | ------------------------- |
-| [[`RegExp.escape`]](https://github.com/tc39/proposal-regexp-escape)                                                | 2025                      |
-| [Float16 on TypedArrays, DataView, `Math.f16round`](https://github.com/tc39/proposal-float16)            | 2025                      |
-| [[`Promise.try`]](https://github.com/tc39/proposal-promise-try)                                                     | 2025                      |
-| [Sync Iterator helpers](https://github.com/tc39/proposal-iterator-helpers)                                | 2025                      |
-| [JSON Modules](https://github.com/tc39/proposal-json-modules)                                             | 2025                      |
-| [Import Attributes](https://github.com/tc39/proposal-import-attributes)                                   | 2025                      |
-| [RegExp Modifiers](https://github.com/tc39/proposal-regexp-modifiers)                                     | 2025                      |
-| [New Set methods](https://github.com/tc39/proposal-set-methods)                                           | 2025                      |
-| [Duplicate named capture groups](https://github.com/tc39/proposal-duplicate-named-capturing-groups)                   | 2025                      |
-| [ArrayBuffer transfer](https://github.com/tc39/proposal-arraybuffer-transfer)                             | 2024                      |
-| [[`Promise.withResolvers`]](https://github.com/tc39/proposal-promise-with-resolvers)                                 | 2024                      |
-| [Array Grouping](https://github.com/tc39/proposal-array-grouping)                                         | 2024                      |
-| [Resizable and growable ArrayBuffers](https://github.com/tc39/proposal-resizable-arraybuffer)                         | 2024                      |
-| [RegExp v flag with set notation + properties of strings](https://github.com/tc39/proposal-regexp-v-flag) | 2024                      |
-| [[`Atomics.waitAsync`]](https://github.com/tc39/proposal-atomics-wait-async)                                       | 2024                      |
-| [Well-Formed Unicode Strings](https://github.com/tc39/proposal-well-formed-unicode-strings)                                | 2024                      |
-| [Change Array by Copy](https://github.com/tc39/proposal-change-array-by-copy)                             | 2023                      |
-| [Symbols as WeakMap keys](https://github.com/tc39/proposal-symbols-as-weakmap-keys)                               | 2023                      |
-| [Hashbang Grammar](https://github.com/tc39/proposal-hashbang)                                     | 2023                      |
-| [Array find from last](https://github.com/tc39/proposal-array-find-from-last)                                        | 2023                      |
-| [Error Cause](https://github.com/tc39/proposal-error-cause)                                               | 2022                      |
-| [Class Static Block](https://github.com/tc39/proposal-class-static-block)                                      | 2022                      |
-| [Accessible `Object.prototype.hasOwnProperty`](https://github.com/tc39/proposal-accessible-object-hasownproperty)               | 2022                      |
-| [[`.at()`]](https://github.com/tc39/proposal-array-at)                                                            | 2022                      |
-| [Ergonomic brand checks for Private Fields](https://github.com/tc39/proposal-private-fields-in-in)        | 2022                      |
-| [Top-level `await`](https://github.com/tc39/proposal-top-level-await)                                               | 2022                      |
-| [RegExp Match Indices](https://github.com/tc39/proposal-regexp-match-indices)                              | 2022                      |
-| [Class Fields (Private instance methods and accessors, Class Public Instance Fields & Private Instance Fields, Static class fields and private static methods)](https://github.com/tc39/proposal-class-fields) | 2022 |
-| [Numeric separators](https://github.com/tc39/proposal-numeric-separator)                                 | 2021                      |
-| [Logical Assignment Operators](https://github.com/tc39/proposal-logical-assignment)                       | 2021                      |
-| [WeakRefs](https://github.com/tc39/proposal-weakrefs)                                                     | 2021                      |
-| [[`Promise.any`]](https://github.com/tc39/proposal-promise-any)                                             | 2021                      |
-| [[`String.prototype.replaceAll`]](https://github.com/tc39/proposal-string-replaceall)                             | 2021                      |
-| [[`import.meta`]](https://github.com/tc39/proposal-import-meta)                                             | 2020                      |
-| [Nullish coalescing Operator](https://github.com/tc39/proposal-nullish-coalescing)                        | 2020                      |
-| [Optional Chaining](https://github.com/tc39/proposal-optional-chaining)                                            | 2020                      |
-| [[`for-in` mechanics]](https://github.com/tc39/proposal-for-in-order)                                   | 2020                      |
-| [[`globalThis`]](https://github.com/tc39/proposal-global)                                               | 2020                      |
-| [[`Promise.allSettled`]](https://github.com/tc39/proposal-promise-allSettled)                                       | 2020                      |
-| [[`BigInt`]](https://github.com/tc39/proposal-bigint)                                                       | 2020                      |
-| [[`import()`]](https://github.com/tc39/proposal-dynamic-import)                                             | 2020                      |
-| [[`String.prototype.matchAll`]](https://github.com/tc39/proposal-string-matchall)                                  | 2020                      |
-| [[`Array.prototype.{flat,flatMap}`]](https://github.com/tc39/proposal-array-flat-map)                                 | 2019                      |
-| [[`String.prototype.{trimStart,trimEnd}`]](https://github.com/tc39/proposal-string-trim-start-end)                          | 2019                      |
-| [Well-formed `JSON.stringify`](https://github.com/tc39/proposal-well-formed-stringify)                    | 2019                      |
-| [[`Object.fromEntries`]](https://github.com/tc39/proposal-object-from-entries)                              | 2019                      |
-| [[`Function.prototype.toString` revision]](https://github.com/tc39/proposal-function-prototype-tostring-revision)             | 2019                      |
-| [[`Symbol.prototype.description`]](https://github.com/tc39/proposal-symbol-description)                     | 2019                      |
-| [JSON superset](https://github.com/tc39/proposal-json-superset)                                           | 2019                      |
-| [Optional `catch` binding](https://github.com/tc39/proposal-optional-catch-binding)                               | 2019                      |
-| [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration)                                | 2018                      |
-| [[`Promise.prototype.finally`]](https://github.com/tc39/proposal-promise-finally)                                   | 2018                      |
-| [RegExp Unicode Property Escapes](https://github.com/tc39/proposal-regexp-unicode-property-escapes)                       | 2018                      |
-| [RegExp Lookbehind Assertions](https://github.com/tc39/proposal-regexp-lookbehind)                               | 2018                      |
-| [Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread)                             | 2018                      |
-| [RegExp named capture groups](https://github.com/tc39/proposal-regexp-named-groups)                              | 2018                      |
-| [`s` (`dotAll`) flag for regular expressions](https://github.com/tc39/proposal-regexp-dotall-flag)                   | 2018                      |
-| [Lifting template literal restriction](https://github.com/tc39/proposal-template-literal-revision)            | 2018                      |
-| [Shared memory and atomics](https://github.com/tc39/proposal-shared-memory-and-atomics)                                     | 2017                      |
-| [Async functions](https://github.com/tc39/proposal-async-await)                                           | 2017                      |
-| [Trailing commas in function parameter lists and calls](https://github.com/tc39/proposal-trailing-function-commas) | 2017                      |
-| [[`Object.getOwnPropertyDescriptors`]](https://github.com/tc39/proposal-object-getownpropertydescriptors)                       | 2017                      |
-| [String padding](https://github.com/tc39/proposal-string-pad-start-end)                                         | 2017                      |
-| [[`Object.values`/`Object.entries`]](https://github.com/tc39/proposal-object-values-entries)                | 2017                      |
-| [Exponentiation operator](https://github.com/tc39/proposal-exponentiation-operator)                                | 2016                      |
-| [[`Array.prototype.includes`]](https://github.com/tc39/proposal-array-includes)                             | 2016                      |
-| [Lexical Declarations (`let`, `const`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)                                   | 2015                      |
-| [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)                                                          | 2015                      |
-| [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)                                                                  | 2015                      |
-| [Enhanced Object Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#New_notations_in_ECMAScript_2015)                                                 | 2015                      |
-| [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)                                                        | 2015                      |
-| [Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)                                                 | 2015                      |
-| [Default Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)                                                      | 2015                      |
-| [Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)                                                         | 2015                      |
-| [Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)                                                            | 2015                      |
-| [Iterators and `for...of` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)                                            | 2015                      |
-| [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)                                                               | 2015                      |
-| [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)                                                                 | 2015                      |
-| [Modules (ESM: `import`/`export`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)                                         | 2015                      |
-| [`Map`, `Set`, `WeakMap`, `WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)                                       | 2015                      |
-| [`Symbol` primitive type](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)                                                  | 2015                      |
-| [`Proxy` and `Reflect` APIs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)                                               | 2015                      |
-| [[`Object.assign`]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)                                                          | 2015                      |
-| [New `String` methods (e.g., `startsWith`, `endsWith`, `includes`, `repeat`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#New_methods_in_ECMAScript_2015) | 2015                      |
-| [New `Array` methods (e.g., `Array.from`, `Array.of`, `find`, `findIndex`, `fill`, `copyWithin`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#New_methods_in_ECMAScript_2015) | 2015                      |
-| [Typed Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)                                                             | 2015                      |
-| [Binary and Octal Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)                                                | 2015                      |
-| [`__proto__` in object literals (standardized)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)                            | 2015                      |
-| [[`Object.is`]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)                                                              | 2015                      |
-| [`Number` properties and methods (e.g., `Number.isFinite`, `Number.isNaN`, `Number.EPSILON`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#New_methods_in_ECMAScript_2015) | 2015                      |
-| [`Math` methods (e.g., `Math.trunc`, `Math.sign`, `Math.cbrt`, `Math.hypot`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math#New_methods_in_ECMAScript_2015) | 2015                      |
-| [Unicode regular expression (`u`) flag improvements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)                       | 2015                      |
-| [Sticky (`y`) flag for regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky)                                | 2015                      |
+| Proposal                                                                 | ES Version | Description (한글) |
+| ------------------------------------------------------------------------ | ----------- | ------------------ |
+| [[`RegExp.escape`]](https://github.com/tc39/proposal-regexp-escape)                                                | ES2025      | 정규식 내 특수 문자를 이스케이프하여 리터럴 문자열로 취급하는 정적 메서드 `RegExp.escape()`를 추가합니다. |
+| [Float16 on TypedArrays, DataView, `Math.f16round`](https://github.com/tc39/proposal-float16)            | ES2025      | `TypedArray`, `DataView`에서 16비트 부동소수점(half-precision) 형식을 지원하고, 가장 가까운 16비트 부동소수점 값으로 반올림하는 `Math.f16round()` 함수를 추가합니다. |
+| [[`Promise.try`]](https://github.com/tc39/proposal-promise-try)                                                     | ES2025      | 동기/비동기 함수 실행을 `try...catch`처럼 감싸 즉시 Promise를 반환하는 `Promise.try()` 정적 메서드를 추가합니다. |
+| [Sync Iterator helpers](https://github.com/tc39/proposal-iterator-helpers)                                | ES2025      | 동기 이터레이터에 `map`, `filter`, `take`, `drop`, `flatMap`, `reduce`, `toArray`, `forEach`, `some`, `every`, `find`와 같은 헬퍼 메서드를 추가합니다. |
+| [JSON Modules](https://github.com/tc39/proposal-json-modules)                                             | ES2025      | `import` 문을 사용하여 JSON 파일을 모듈처럼 직접 가져올 수 있도록 지원합니다. |
+| [Import Attributes](https://github.com/tc39/proposal-import-attributes)                                   | ES2025      | `import` 문에 추가적인 속성(예: `type`)을 명시하여 모듈 로딩 방식을 제어합니다 (이전 'Import Assertions'). |
+| [RegExp Modifiers](https://github.com/tc39/proposal-regexp-modifiers)                                     | ES2025      | 정규식 리터럴 내에서 `(?i:)`와 같이 특정 부분에만 플래그(i, m, s)를 적용하거나 해제할 수 있는 문법을 추가합니다. |
+| [New Set methods](https://github.com/tc39/proposal-set-methods)                                           | ES2025      | `Set` 객체에 교집합(`intersection`), 합집합(`union`), 차집합(`difference`), 대칭차집합(`symmetricDifference`), 부분집합 여부(`isSubsetOf`), 상위집합 여부(`isSupersetOf`), 서로소 여부(`isDisjointFrom`) 등의 새로운 메서드를 추가합니다. |
+| [Duplicate named capture groups](https://github.com/tc39/proposal-duplicate-named-capturing-groups)                   | ES2025      | 정규식에서 동일한 이름의 캡처 그룹을 여러 번 사용할 수 있도록 허용합니다. |
+| [ArrayBuffer transfer](https://github.com/tc39/proposal-arraybuffer-transfer)                             | ES2024      | `ArrayBuffer`의 소유권을 다른 컨텍스트로 효율적으로 이전(transfer)하거나, 현재 버퍼를 유지하면서 복사본을 이전하는 기능을 추가합니다. (`transfer()`, `transferToFixedLength()`) |
+| [[`Promise.withResolvers`]](https://github.com/tc39/proposal-promise-with-resolvers)                                 | ES2024      | Promise 객체와 그 Promise를 제어하는 `resolve` 및 `reject` 함수를 함께 반환하는 `Promise.withResolvers()` 정적 메서드를 추가합니다. |
+| [Array Grouping](https://github.com/tc39/proposal-array-grouping)                                         | ES2024      | 배열의 요소를 주어진 콜백 함수가 반환하는 값을 기준으로 그룹화하여 객체 또는 `Map`으로 반환하는 `Object.groupBy()` 및 `Map.groupBy()` 메서드를 추가합니다. |
+| [Resizable and growable ArrayBuffers](https://github.com/tc39/proposal-resizable-arraybuffer)                         | ES2024      | 생성 시 `maxByteLength`를 지정하여 런타임에 크기를 조절할 수 있는 `ArrayBuffer` 및 `SharedArrayBuffer`를 지원합니다. |
+| [RegExp v flag with set notation + properties of strings](https://github.com/tc39/proposal-regexp-v-flag) | ES2024      | 정규식에 유니코드 집합 연산(차집합, 교집합 등) 및 문자열의 유니코드 속성 지원을 강화하는 `v` 플래그를 추가합니다. |
+| [[`Atomics.waitAsync`]](https://github.com/tc39/proposal-atomics-wait-async)                                       | ES2024      | `SharedArrayBuffer`의 특정 위치 값이 변경될 때까지 비동기적으로 대기하는 `Atomics.waitAsync()` 메서드를 추가합니다. |
+| [Well-Formed Unicode Strings](https://github.com/tc39/proposal-well-formed-unicode-strings)                                | ES2024      | 문자열이 잘 구성된 유니코드인지 확인하는 `isWellFormed()` 메서드와, 잘 구성된 유니코드로 변환하는 `toWellFormed()` 메서드를 `String.prototype`에 추가합니다. |
+| [Change Array by Copy](https://github.com/tc39/proposal-change-array-by-copy)                             | ES2023      | 원본 배열을 변경하지 않고 변경된 복사본을 반환하는 배열 메서드들(`toReversed()`, `toSorted()`, `toSpliced()`, `with()`)을 추가합니다. |
+| [Symbols as WeakMap keys](https://github.com/tc39/proposal-symbols-as-weakmap-keys)                               | ES2023      | 고유하고 가비지 컬렉션 대상이 될 수 있는 `Symbol`을 `WeakMap`의 키로 사용할 수 있도록 허용합니다. |
+| [Hashbang Grammar](https://github.com/tc39/proposal-hashbang)                                     | ES2023      | JavaScript 스크립트 파일 시작 부분의 해시뱅/셔뱅 (`#!`) 주석을 표준 문법으로 공식 인정하여, 실행 환경이 이를 올바르게 해석할 수 있도록 합니다. |
+| [Array find from last](https://github.com/tc39/proposal-array-find-from-last)                                        | ES2023      | 배열의 끝에서부터 조건을 만족하는 요소를 찾는 `findLast()` 및 해당 요소의 인덱스를 찾는 `findLastIndex()` 메서드를 추가합니다. |
+| [Error Cause](https://github.com/tc39/proposal-error-cause)                                               | ES2022      | `Error` 객체를 생성할 때 에러의 원인이 된 다른 에러를 명시할 수 있는 `cause` 옵션을 `Error` 생성자에 추가합니다. |
+| [Class Static Block](https://github.com/tc39/proposal-class-static-block)                                      | ES2022      | 클래스 정의 내에서 정적 멤버를 초기화하거나 복잡한 정적 로직을 수행할 수 있는 `static {}` 블록을 도입합니다. |
+| [Accessible `Object.prototype.hasOwnProperty`](https://github.com/tc39/proposal-accessible-object-hasownproperty)               | ES2022      | `Object.prototype.hasOwnProperty.call(obj, prop)` 대신 사용할 수 있는 더 안전하고 간결한 `Object.hasOwn(obj, prop)` 정적 메서드를 추가합니다. |
+| [[`.at()`]](https://github.com/tc39/proposal-array-at)                                                            | ES2022      | 배열, 문자열, TypedArray 등 인덱싱 가능한 객체에서 음수 인덱스를 사용하여 끝에서부터 요소에 접근할 수 있는 `.at()` 메서드를 추가합니다. |
+| [Ergonomic brand checks for Private Fields](https://github.com/tc39/proposal-private-fields-in-in)        | ES2022      | `in` 연산자를 사용하여 클래스 외부에서도 객체가 특정 프라이빗 필드를 가지고 있는지 여부를 안전하게 확인할 수 있게 합니다. |
+| [Top-level `await`](https://github.com/tc39/proposal-top-level-await)                                               | ES2022      | ES 모듈의 최상위 레벨에서 `async` 함수 외부에서도 `await` 키워드를 사용하여 비동기 작업을 처리할 수 있도록 합니다. |
+| [RegExp Match Indices](https://github.com/tc39/proposal-regexp-match-indices)                              | ES2022      | 정규식 일치 결과 객체에 각 캡처 그룹의 시작 및 끝 인덱스 정보를 제공하는 `indices` 속성을 추가합니다 (정규식에 `d` 플래그 사용 시). |
+| [Class Fields (Private instance methods and accessors, Class Public Instance Fields & Private Instance Fields, Static class fields and private static methods)](https://github.com/tc39/proposal-class-fields) | ES2022      | 클래스에 public/private 인스턴스 필드, public/private static 필드, private 인스턴스 메서드/접근자, private static 메서드/접근자를 선언하는 기능을 제공합니다. |
+| [Numeric separators](https://github.com/tc39/proposal-numeric-separator)                                 | ES2021      | 숫자 리터럴(예: `1_000_000`) 내에 밑줄(`_`)을 사용하여 가독성을 향상시키는 기능을 추가합니다. |
+| [Logical Assignment Operators](https://github.com/tc39/proposal-logical-assignment)                       | ES2021      | 논리 연산자(`&&`, `||`, `??`)와 할당을 결합한 연산자(`&&=`, `||=`, `??=`)를 추가하여 코드를 간결하게 만듭니다. |
+| [WeakRefs](https://github.com/tc39/proposal-weakrefs)                                                     | ES2021      | 객체에 대한 약한 참조(`WeakRef`)를 생성하여, 해당 객체가 가비지 컬렉션 대상이 되는 것을 막지 않으면서 참조할 수 있게 합니다. `FinalizationRegistry`도 함께 도입됩니다. |
+| [[`Promise.any`]](https://github.com/tc39/proposal-promise-any)                                             | ES2021      | 여러 `Promise` 중 가장 먼저 성공(fulfilled)하는 `Promise`의 결과를 반환합니다. 모든 `Promise`가 실패하면 `AggregateError`를 반환합니다. |
+| [[`String.prototype.replaceAll`]](https://github.com/tc39/proposal-string-replaceall)                             | ES2021      | 문자열 내에서 특정 부분 문자열의 모든 발생을 다른 문자열로 교체하는 `replaceAll()` 메서드를 추가합니다. |
+| [[`import.meta`]](https://github.com/tc39/proposal-import-meta)                                             | ES2020      | ES 모듈 내에서 현재 모듈에 대한 컨텍스트 특정 메타데이터(예: 모듈 URL)를 담고 있는 `import.meta` 객체를 제공합니다. |
+| [Nullish coalescing Operator](https://github.com/tc39/proposal-nullish-coalescing)                        | ES2020      | `??` 연산자로, 왼쪽 피연산자가 `null` 또는 `undefined`일 경우 오른쪽 피연산자를 반환하고, 그렇지 않으면 왼쪽 피연산자를 반환합니다. |
+| [Optional Chaining](https://github.com/tc39/proposal-optional-chaining)                                            | ES2020      | `?.` 연산자로, 체인의 참조가 `null` 또는 `undefined`일 가능성이 있을 때 에러 발생 없이 프로퍼티나 함수 호출을 시도하고, 해당 값이 없으면 `undefined`를 반환합니다. |
+| [[`for-in` mechanics]](https://github.com/tc39/proposal-for-in-order)                                   | ES2020      | `for...in` 루프가 객체 속성을 열거하는 순서에 대한 명세를 명확히 하여 구현 간 일관성을 높입니다. |
+| [[`globalThis`]](https://github.com/tc39/proposal-global)                                               | ES2020      | 다양한 JavaScript 환경(브라우저의 `window`, Node.js의 `global` 등)에서 전역 `this` 값을 일관되게 참조할 수 있는 `globalThis` 키워드를 제공합니다. |
+| [[`Promise.allSettled`]](https://github.com/tc39/proposal-promise-allSettled)                                       | ES2020      | 여러 `Promise`가 모두 이행(settled: 성공 또는 실패)될 때까지 기다린 후, 각 `Promise`의 상태와 결과(또는 이유)를 담은 객체의 배열을 반환합니다. |
+| [[`BigInt`]](https://github.com/tc39/proposal-bigint)                                                       | ES2020      | `Number`의 최대 안전 정수보다 큰 정수를 표현할 수 있는 새로운 숫자 원시 타입 `BigInt`를 도입합니다. |
+| [[`import()`]](https://github.com/tc39/proposal-dynamic-import)                                             | ES2020      | 필요할 때 모듈을 동적으로 로드할 수 있는 함수 형태의 `import()` 문법을 제공합니다. `Promise`를 반환합니다. |
+| [[`String.prototype.matchAll`]](https://github.com/tc39/proposal-string-matchall)                                  | ES2020      | 정규식과 일치하는 모든 결과를 포함하는 이터레이터를 반환하는 `matchAll()` 메서드를 `String.prototype`에 추가합니다. |
+| [[`Array.prototype.{flat,flatMap}`]](https://github.com/tc39/proposal-array-flat-map)                                 | ES2019      | 중첩된 배열을 지정된 깊이까지 평탄화하는 `flat()` 메서드와, 배열의 각 요소에 매핑 함수를 적용한 후 결과를 평탄화하는 `flatMap()` 메서드를 추가합니다. |
+| [[`String.prototype.{trimStart,trimEnd}`]](https://github.com/tc39/proposal-string-trim-start-end)                          | ES2019      | 문자열의 시작 부분 공백을 제거하는 `trimStart()` (또는 `trimLeft`)와 끝 부분 공백을 제거하는 `trimEnd()` (또는 `trimRight`) 메서드를 추가합니다. |
+| [Well-formed `JSON.stringify`](https://github.com/tc39/proposal-well-formed-stringify)                    | ES2019      | `JSON.stringify()`가 잘못된 유니코드 문자(예: lone surrogates)를 유효한 유니코드 이스케이프 시퀀스로 변환하여 반환하도록 수정합니다. |
+| [[`Object.fromEntries`]](https://github.com/tc39/proposal-object-from-entries)                              | ES2019      | `[key, value]` 쌍의 배열이나 이터러블 객체를 받아 새로운 객체로 변환하는 `Object.fromEntries()` 정적 메서드를 추가합니다. (`Object.entries()`의 반대 기능) |
+| [[`Function.prototype.toString` revision]](https://github.com/tc39/proposal-function-prototype-tostring-revision)             | ES2019      | `Function.prototype.toString()`이 함수 소스 코드를 반환할 때 주석과 공백을 포함하여 원본에 더 가깝게 반환하도록 명세를 개정합니다. |
+| [[`Symbol.prototype.description`]](https://github.com/tc39/proposal-symbol-description)                     | ES2019      | `Symbol` 객체를 생성할 때 전달된 설명을 반환하는 읽기 전용 속성 `description`을 `Symbol.prototype`에 추가합니다. |
+| [JSON superset](https://github.com/tc39/proposal-json-superset)                                           | ES2019      | ECMAScript 문자열 리터럴이 모든 JSON 문자열 리터럴을 포함하도록 하여, U+2028 (줄 구분자) 및 U+2029 (단락 구분자) 문자가 문자열 리터럴에 직접 포함될 수 있도록 합니다. |
+| [Optional `catch` binding](https://github.com/tc39/proposal-optional-catch-binding)                               | ES2019      | `try...catch` 문에서 `catch` 블록의 예외 객체 바인딩(매개변수)을 사용하지 않을 경우 생략할 수 있도록 허용합니다 (예: `try {...} catch {...}`). |
+| [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration)                                | ES2018      | 비동기적으로 데이터를 생성하는 이터레이터(Async Iterators)와 이를 소비하는 `for-await...of` 루프 문법을 도입합니다. |
+| [[`Promise.prototype.finally`]](https://github.com/tc39/proposal-promise-finally)                                   | ES2018      | `Promise`가 성공(fulfilled)하든 실패(rejected)하든 관계없이 특정 콜백 함수를 실행하도록 하는 `finally()` 메서드를 `Promise.prototype`에 추가합니다. |
+| [RegExp Unicode Property Escapes](https://github.com/tc39/proposal-regexp-unicode-property-escapes)                       | ES2018      | 정규식에서 유니코드 속성(예: Script, General_Category)을 사용하여 문자를 매칭할 수 있는 `\p{...}` 및 `\P{...}` 이스케이프 시퀀스를 지원합니다 (정규식에 `u` 플래그 필요). |
+| [RegExp Lookbehind Assertions](https://github.com/tc39/proposal-regexp-lookbehind)                               | ES2018      | 정규식에서 현재 위치 이전의 텍스트를 조건으로 매칭하는 긍정형 후방탐색(`(?<=...)`) 및 부정형 후방탐색(`(?<!...)`)을 지원합니다. |
+| [Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread)                             | ES2018      | 객체 리터럴에서 나머지 속성을 모으는 Rest Properties (`...rest`)와 객체의 속성을 펼치는 Spread Properties (`...obj`)를 지원합니다. |
+| [RegExp named capture groups](https://github.com/tc39/proposal-regexp-named-groups)                              | ES2018      | 정규식의 캡처 그룹에 이름을 지정하고 (`(?<name>...)`), 이름으로 참조할 수 있는 기능을 추가합니다. |
+| [`s` (`dotAll`) flag for regular expressions](https://github.com/tc39/proposal-regexp-dotall-flag)                   | ES2018      | 정규식의 `.` 메타문자가 개행 문자(예: `\n`)를 포함한 모든 문자와 일치하도록 하는 `s` (dotAll) 플래그를 추가합니다. |
+| [Lifting template literal restriction](https://github.com/tc39/proposal-template-literal-revision)            | ES2018      | 태그된 템플릿 리터럴에서 잘못된 이스케이프 시퀀스가 포함된 문자열을 사용할 수 없었던 제한을 완화합니다. `cooked` 문자열이 `undefined`일 경우 `raw` 문자열을 사용합니다. |
+| [Shared memory and atomics](https://github.com/tc39/proposal-shared-memory-and-atomics)                                     | ES2017      | 여러 워커(스레드) 간에 메모리를 공유할 수 있는 `SharedArrayBuffer`와, 공유 메모리에서의 동시성 문제를 해결하기 위한 `Atomics` 객체를 도입하여 병렬 프로그래밍을 지원합니다. |
+| [Async functions](https://github.com/tc39/proposal-async-await)                                           | ES2017      | `async` 키워드로 비동기 함수를 선언하고, `await` 키워드로 `Promise`가 완료될 때까지 함수의 실행을 일시 중지하여 비동기 코드를 동기식처럼 작성할 수 있게 합니다. |
+| [Trailing commas in function parameter lists and calls](https://github.com/tc39/proposal-trailing-function-commas) | ES2017      | 함수 매개변수 목록 및 함수 호출 시 마지막 매개변수 뒤에 쉼표(trailing comma)를 허용하여 코드 수정 및 버전 관리 용이성을 높입니다. |
+| [[`Object.getOwnPropertyDescriptors`]](https://github.com/tc39/proposal-object-getownpropertydescriptors)                       | ES2017      | 객체의 모든 자체 속성(상속된 속성 제외)에 대한 속성 기술자(property descriptor)들을 담은 객체를 반환하는 `Object.getOwnPropertyDescriptors()` 정적 메서드를 추가합니다. |
+| [String padding](https://github.com/tc39/proposal-string-pad-start-end)                                         | ES2017      | 문자열의 시작 부분(`padStart()`) 또는 끝 부분(`padEnd()`)을 주어진 문자로 채워 지정된 길이의 새로운 문자열을 생성하는 메서드를 추가합니다. |
+| [[`Object.values`/`Object.entries`]](https://github.com/tc39/proposal-object-values-entries)                | ES2017      | 객체의 자체 열거 가능한 속성 값들의 배열을 반환하는 `Object.values()`와, `[key, value]` 쌍의 배열을 반환하는 `Object.entries()` 정적 메서드를 추가합니다. |
+| [Exponentiation operator](https://github.com/tc39/proposal-exponentiation-operator)                                | ES2016      | 거듭제곱 연산을 수행하는 중위 연산자 `**` (예: `2 ** 3`은 8)를 추가합니다. `Math.pow()`와 유사합니다. |
+| [[`Array.prototype.includes`]](https://github.com/tc39/proposal-array-includes)                             | ES2016      | 배열이 특정 요소를 포함하고 있는지 여부를 불리언 값으로 반환하는 `includes()` 메서드를 `Array.prototype`에 추가합니다. `NaN`도 정확히 찾을 수 있습니다. |
+| [Lexical Declarations (`let`, `const`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)                                   | ES2015      | 블록 스코프를 가지는 변수 선언 키워드 `let`과 상수 선언 키워드 `const`를 도입합니다. |
+| [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)                                                          | ES2015      | `function` 키워드 대신 화살표(`=>`)를 사용하여 함수를 간결하게 정의하며, 자체 `this` 바인딩을 갖지 않습니다. |
+| [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)                                                                  | ES2015      | 프로토타입 기반 상속을 더 명확하고 쉽게 사용할 수 있도록 하는 클래스 문법(`class`, `constructor`, `extends`, `super`, `static`)을 도입합니다. |
+| [Enhanced Object Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#New_notations_in_ECMAScript_2015)                                                 | ES2015      | 객체 리터럴 정의 시 속성 축약 표현, 계산된 속성 이름, 메서드 정의 축약 표현 등을 지원합니다. |
+| [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)                                                        | ES2015      | 백틱(\` \`)으로 감싸는 문자열로, 내부에 표현식을 삽입(${expression})하거나 여러 줄 문자열을 쉽게 작성할 수 있습니다. |
+| [Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)                                                 | ES2015      | 배열이나 객체의 값을 추출하여 개별 변수에 할당하는 간편한 문법을 제공합니다. |
+| [Default Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)                                                      | ES2015      | 함수 매개변수에 기본값을 지정하여, 해당 인수가 전달되지 않거나 `undefined`일 경우 기본값을 사용하도록 합니다. |
+| [Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)                                                         | ES2015      | 함수 매개변수 목록의 마지막에 `...`을 사용하여 나머지 인수들을 배열로 모을 수 있게 합니다. |
+| [Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)                                                            | ES2015      | 배열이나 이터러블 객체를 개별 요소로 펼치거나, 객체를 다른 객체 리터럴에 펼칠 수 있게 합니다 (`...`). |
+| [Iterators and `for...of` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)                                            | ES2015      | 이터레이션 프로토콜을 정의하고, 이터러블 객체(배열, 문자열, Map, Set 등)의 값을 순회하는 `for...of` 루프를 도입합니다. |
+| [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)                                                               | ES2015      | 실행을 중간에 멈추고 재개할 수 있는 특별한 함수(제너레이터 함수, `function*`)와 이터레이터를 생성하는 기능을 제공합니다. |
+| [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)                                                                 | ES2015      | 비동기 작업의 최종 완료 또는 실패를 나타내는 객체와 그 결과를 다루는 표준화된 방법을 제공합니다. |
+| [Modules (ESM: `import`/`export`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)                                         | ES2015      | 코드를 모듈 단위로 구성하고, `import`와 `export` 키워드를 사용하여 모듈 간 의존성을 관리하는 표준 모듈 시스템을 도입합니다. |
+| [`Map`, `Set`, `WeakMap`, `WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)                                       | ES2015      | 키-값 쌍을 저장하는 `Map`, 고유한 값을 저장하는 `Set`, 그리고 키에 대한 약한 참조를 가지는 `WeakMap` 및 `WeakSet` 컬렉션 객체를 도입합니다. |
+| [`Symbol` primitive type](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)                                                  | ES2015      | 고유하고 변경 불가능한 원시 값인 `Symbol` 타입을 도입하여, 객체 속성 키 충돌을 방지하는 데 사용될 수 있습니다. |
+| [`Proxy` and `Reflect` APIs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)                                               | ES2015      | 객체에 대한 기본적인 동작(속성 접근, 할당, 열거, 함수 호출 등)을 가로채고 재정의할 수 있는 `Proxy` 객체와, 이러한 동작을 위한 기본 메서드를 제공하는 `Reflect` API를 도입합니다. |
+| [[`Object.assign`]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)                                                          | ES2015      | 하나 이상의 출처 객체로부터 모든 열거 가능한 자체 속성을 대상 객체로 복사하는 `Object.assign()` 정적 메서드를 추가합니다. |
+| [New `String` methods (e.g., `startsWith`, `endsWith`, `includes`, `repeat`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#New_methods_in_ECMAScript_2015) | ES2015      | 문자열 처리를 위한 다양한 새 메서드들(`startsWith`, `endsWith`, `includes`, `repeat` 등)을 `String.prototype`에 추가합니다. |
+| [New `Array` methods (e.g., `Array.from`, `Array.of`, `find`, `findIndex`, `fill`, `copyWithin`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#New_methods_in_ECMAScript_2015) | ES2015      | 배열 조작 및 생성을 위한 다양한 새 메서드들(`Array.from`, `Array.of`, `find`, `findIndex`, `fill`, `copyWithin` 등)을 `Array` 객체 및 `Array.prototype`에 추가합니다. |
+| [Typed Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)                                                             | ES2015      | 원시 이진 데이터를 다루기 위한 배열 유사 객체들(예: `Int8Array`, `Float32Array`)과 `ArrayBuffer`를 제공합니다. |
+| [Binary and Octal Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)                                                | ES2015      | 2진수(`0b` 또는 `0B` 접두사) 및 8진수(`0o` 또는 `0O` 접두사) 숫자 리터럴 표기법을 지원합니다. |
+| [`__proto__` in object literals (standardized)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)                            | ES2015      | 객체 리터럴 내에서 `__proto__` 속성을 사용하여 프로토타입을 설정하는 기능을 표준화합니다. (권장되지는 않음) |
+| [[`Object.is`]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)                                                              | ES2015      | 두 값이 같은 값인지 비교하는 `Object.is()` 정적 메서드를 추가합니다. (`===` 보다 `NaN`과 `+0`, `-0` 처리에 있어 더 정확함) |
+| [`Number` properties and methods (e.g., `Number.isFinite`, `Number.isNaN`, `Number.EPSILON`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#New_methods_in_ECMAScript_2015) | ES2015      | 숫자 관련 유틸리티 상수(`EPSILON`, `MAX_SAFE_INTEGER` 등) 및 메서드(`isFinite`, `isNaN`, `isInteger`, `isSafeInteger` 등)를 `Number` 객체에 추가합니다. |
+| [`Math` methods (e.g., `Math.trunc`, `Math.sign`, `Math.cbrt`, `Math.hypot`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math#New_methods_in_ECMAScript_2015) | ES2015      | 수학 연산을 위한 다양한 새 정적 메서드들(`trunc`, `sign`, `cbrt`, `log10`, `hypot` 등)을 `Math` 객체에 추가합니다. |
+| [Unicode regular expression (`u`) flag improvements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)                       | ES2015      | 정규식 `u` 플래그 사용 시 유니코드 코드 포인트 단위로 매칭하고, 유니코드 이스케이프 시퀀스(`\u{...}`)를 지원하는 등 유니코드 처리를 개선합니다. |
+| [Sticky (`y`) flag for regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky)                                | ES2015      | 정규식 `y` (sticky) 플래그를 추가하여, `lastIndex` 속성으로 지정된 위치에서만 일치하는지 확인하고, 일치하면 `lastIndex`를 갱신합니다. |
+
+
+
 
 * [Stage 1 Proposals](stage-1-proposals.md)
 * [Stage 0 Proposals](stage-0-proposals.md)
