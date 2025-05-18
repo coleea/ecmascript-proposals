@@ -101,31 +101,26 @@ Finished proposals are proposals that have reached stage 4, and are included in 
 | [Sticky (`y`) flag for regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky)                                | ES2015      | 정규식 `y` (sticky) 플래그를 추가하여, `lastIndex` 속성으로 지정된 위치에서만 일치하는지 확인하고, 일치하면 `lastIndex`를 갱신합니다. |
 
 
-
-
-
-
 ### Stage 3
 
-| Proposal                                                                       | Author                                                                  | Champion                                                                | <sub>Test262 Feature Flag</sub>                                     | <sub>Last Presented</sub>                                  |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [Legacy RegExp features in JavaScript][regexp-legacy]                          | Claude Pache                                                            | Mark Miller<br />Claude Pache                                           | <sub>[legacy-regexp][tests-regexp-legacy]</sub>                     | <sub>[May 2017][regexp-legacy-notes]</sub>            |
-| [Temporal][temporal]                                                           | Philipp Dunkel<br />Maggie Johnson-Pint<br />Matt Johnson-Pint<br />Brian Terlson<br />Shane Carr<br />Ujjwal Sharma<br />Philip Chimento<br />Jason Williams<br />Justin Grant | Philipp Dunkel<br />Maggie Johnson-Pint<br />Matt Johnson-Pint<br />Brian Terlson<br />Shane Carr<br />Ujjwal Sharma<br />Philip Chimento<br />Jason Williams<br />Justin Grant| <sub>[Temporal][temporal-tests] [testing plan][temporal-testplan]</sub> | <sub>[July 2024][temporal-notes]</sub> |
-| [Decorators][decorators]                                                       | Daniel Ehrenberg<br />Kristen Hewell Garrett                            | Kristen Hewell Garrett                                                  | <sub>[decorators][decorators-tests] [testing plan][decorators-testplan]</sub> | <sub>[March 2023][decorators-notes]</sub>   |
-| [JSON.parse source text access][json-parse-source]                             | Richard Gibson                                                          | Richard Gibson                                                          | <sub>[json-parse-with-source][json-parse-source-tests] [testing plan][json-parse-testplan]</sub> | <sub>[January 2023][json-parse-source-notes]</sub> |
-| [`Array.fromAsync`][from-async]                                                | J.S. Choi                                                               | J.S. Choi                                                               | <sub>[Array.fromAsync][from-async-tests]</sub>                      | <sub>[May 2023][from-async-notes]</sub>               |
-| [Explicit Resource Management][resource-management]                            | Ron Buckton                                                             | Ron Buckton                                                             | <sub>[explicit-resource-management][resource-management-tests]      | <sub>[March 2023][resource-management-notes]</sub>    |
-| [Decorator Metadata][decorator-metadata]                                       | Kristen Hewell Garrett                                                  | Kristen Hewell Garrett                                                  | <sub>[decorator-metadata][decorator-metadata-tests]</sub>           | <sub>[May 2023][decorator-metadata-notes]</sub>       |
-| [Source Phase Imports][source-phase-imports]                                   | Luca Casonato                                                           | Guy Bedford<br />Luca Casonato                                          | <sub>[source-phase-imports][source-phase-imports-tests]</sub>       | <sub>[July 2023][source-phase-imports-notes]</sub>    |
-| [Time Zone Canonicalization][time-zone-canon]                                  | Justin Grant                                                            | Justin Grant<br />Richard Gibson                                        | <sub>[Temporal.TimeZone][time-zone-canon-tests]                     | <sub>[July 2023][time-zone-canon-notes]</sub>         |
-| [Uint8Array to/from Base64][uint8array-base64]                                 | Kevin Gibbons                                                           | Kevin Gibbons                                                           | <sub>[uint8array-base64][uint8array-base64-tests]</sub>             | <sub>[February 2024][uint8array-base64-notes]</sub>   |
-| [Dynamic Code Brand Checks][dynamic-code-brand-checks]                         | Nicolò Ribaudo                                                          | Krzysztof Kotowicz<br />Mike Samuel<br />Nicolò Ribaudo                 | :question:                                                           | <sub>April 2024</sub>                                 |
-| [Redeclarable global `eval`-introduced `var`s][redeclarable-global-eval-vars]  | Shu-yu Guo                                                              | Shu-yu Guo                                                              | <sub>[Testing plan][redeclarable-global-eval-vars-testplan]</sub>   | <sub>[April 2024][redeclarable-global-eval-vars-notes]</sub> |
-| [`Atomics.pause`][atomics-pause]                                               | Shu-yu Guo                                                              | Shu-yu Guo                                                              | <sub>[Atomics.pause][atomics-pause-tests]</sub>                     | <sub>[October 2024][atomics-pause-notes]</sub>        |
-| [`Error.isError`][is-error]                                                    | Jordan Harband                                                          | Jordan Harband                                                          | <sub>[Error.isError][error-iserror-tests]</sub>                     | <sub>[December 2024][is-error-notes]</sub>            |
-| [Deferring Module Evaluation][lazy-import]                                     | Yulia Startsev<br />Guy Bedford                                         | Yulia Startsev<br />Guy Bedford<br />Nicolò Ribaudo                     | <sub>[Testing plan][lazy-import-testplan]</sub>                     | <sub>[February 2025][lazy-import-notes]</sub>         |
-| [`Math.sumPrecise`][math-sum]                                                  | Kevin Gibbons                                                           | Kevin Gibbons                                                           | <sub>[Math.sumPrecise][math-sum-tests]</sub>                        | <sub>[October 2024][math-sum-notes]</sub>             |
-
+| Proposal                                                                       | Description (한글) |
+| ------------------------------------------------------------------------------ | ------------------ |
+| [Legacy RegExp features in JavaScript][regexp-legacy]                          | 구형 브라우저에서 지원되던 비표준 정규식 기능(예: 특정 상황에서의 캡처 그룹 동작)을 명세에 포함하여 웹 호환성을 높입니다. |
+| [Temporal][temporal]                                                           | 날짜 및 시간 처리를 위한 현대적이고 사용하기 쉬운 `Temporal` 전역 객체와 관련 API를 도입합니다. (기존 `Date` 객체의 단점 개선) |
+| [Decorators][decorators]                                                       | 클래스와 클래스 멤버(메서드, 필드, 접근자)에 메타프로그래밍 기능을 추가할 수 있는 데코레이터 문법을 도입합니다. |
+| [JSON.parse source text access][json-parse-source]                             | `JSON.parse`가 파싱한 값과 함께 원본 JSON 문자열의 해당 부분을 가져올 수 있는 기능을 추가합니다 (예: `reviver` 함수에서). |
+| [`Array.fromAsync`][from-async]                                                | 비동기 이터러블이나 `Promise`를 반환하는 이터러블로부터 배열을 생성하는 `Array.fromAsync()` 정적 메서드를 추가합니다. |
+| [Explicit Resource Management][resource-management]                            | 파일 핸들, 네트워크 연결 등 사용 후 명시적으로 해제해야 하는 리소스를 `using` 및 `await using` 구문을 통해 안전하게 관리하는 기능을 도입합니다. |
+| [Decorator Metadata][decorator-metadata]                                       | 데코레이터가 클래스 및 멤버에 메타데이터를 연결하고 접근할 수 있도록 하는 표준적인 방법을 제공합니다. |
+| [Source Phase Imports][source-phase-imports]                                   | 모듈 그래프를 분석하는 단계(소스 단계)에서만 필요한 모듈을 가져올 수 있도록 하여, 런타임에는 해당 모듈이 로드되지 않게 합니다. (주로 빌드 도구나 린터용) |
+| [Time Zone Canonicalization][time-zone-canon]                                  | `Temporal` API에서 사용되는 시간대 식별자를 정규화(canonicalize)하는 방식을 명확히 합니다. |
+| [Uint8Array to/from Base64][uint8array-base64]                                 | `Uint8Array`와 Base64 문자열 간의 효율적인 변환을 위한 메서드를 추가합니다. |
+| [Dynamic Code Brand Checks][dynamic-code-brand-checks]                         | `eval`이나 `new Function` 등으로 생성된 동적 코드인지 여부를 안전하게 확인할 수 있는 방법을 제공합니다. |
+| [Redeclarable global `eval`-introduced `var`s][redeclarable-global-eval-vars]  | 전역 스코프에서 `eval`을 통해 선언된 `var` 변수가 특정 조건 하에 재선언될 수 있도록 하는 동작을 명확히 합니다. |
+| [`Atomics.pause`][atomics-pause]                                               | 스핀락(spin lock)과 같은 바쁜 대기(busy-waiting) 루프에서 CPU 사용량을 줄이고 성능을 개선하기 위해 짧은 시간 동안 실행을 일시 중지하는 `Atomics.pause()` 메서드를 추가합니다. |
+| [`Error.isError`][is-error]                                                    | 주어진 값이 `Error` 객체인지 여부를 안정적으로 확인하는 `Error.isError()` 정적 메서드를 추가합니다. |
+| [Deferring Module Evaluation][lazy-import]                                     | 모듈을 가져올 때 즉시 평가하지 않고, 실제 사용될 때까지 평가를 지연시키는 기능을 도입합니다. (성능 최적화) |
+| [`Math.sumPrecise`][math-sum]                                                  | 부동소수점 숫자의 배열 합계를 계산할 때 정밀도 손실을 최소화하는 `Math.sumPrecise()` 메서드를 추가합니다. |
 
 
 
