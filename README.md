@@ -1,5 +1,106 @@
 # [ECMAScript](https://github.com/tc39/ecma262) proposals
 
+# Finished Proposals
+
+Finished proposals are proposals that have reached stage 4, and are included in the [latest draft](https://tc39.es/ecma262/) of the specification.
+
+| Proposal                                                                 | Expected Publication Year |
+| ------------------------------------------------------------------------ | ------------------------- |
+| [`RegExp.escape`][escape]                                                | 2025                      |
+| [Float16 on TypedArrays, DataView, `Math.f16round`][float16s]            | 2025                      |
+| [`Promise.try`][try]                                                     | 2025                      |
+| [Sync Iterator helpers][iterator-helpers]                                | 2025                      |
+| [JSON Modules][json-modules]                                             | 2025                      |
+| [Import Attributes][import-attributes]                                   | 2025                      |
+| [RegExp Modifiers][regexp-modifiers]                                     | 2025                      |
+| [New Set methods][set-methods]                                           | 2025                      |
+| [Duplicate named capture groups][named-capture-groups]                   | 2025                      |
+| [ArrayBuffer transfer][arraybuffer-transfer]                             | 2024                      |
+| [`Promise.withResolvers`][promise-defer]                                 | 2024                      |
+| [Array Grouping][array-grouping]                                         | 2024                      |
+| [Resizable and growable ArrayBuffers][resizable]                         | 2024                      |
+| [RegExp v flag with set notation + properties of strings][regexp-v-flag] | 2024                      |
+| [`Atomics.waitAsync`][nonblocking]                                       | 2024                      |
+| [Well-Formed Unicode Strings][usv-string]                                | 2024                      |
+| [Change Array by Copy][change-array-by-copy]                             | 2023                      |
+| [Symbols as WeakMap keys][symbols-weakmap]                               | 2023                      |
+| [Hashbang Grammar][hashbang-grammar]                                     | 2023                      |
+| [Array find from last][find-last]                                        | 2023                      |
+| [Error Cause][error-cause]                                               | 2022                      |
+| [Class Static Block][static-blocks]                                      | 2022                      |
+| [Accessible `Object.prototype.hasOwnProperty`][object-has]               | 2022                      |
+| [`.at()`][at]                                                            | 2022                      |
+| [Ergonomic brand checks for Private Fields][private-fields-in-in]        | 2022                      |
+| [Top-level `await`][await]                                               | 2022                      |
+| [RegExp Match Indices][regex-match-indices]                              | 2022                      |
+| Class Fields ([Private instance methods and accessors][private-methods], [Class Public Instance Fields & Private Instance Fields][class-fields], [Static class fields and private static methods][static-class-features]) | 2022 |
+| [Numeric separators][numeric_separators]                                 | 2021                      |
+| [Logical Assignment Operators][logical-assignment]                       | 2021                      |
+| [WeakRefs][weakrefs]                                                     | 2021                      |
+| [`Promise.any`][promise-any]                                             | 2021                      |
+| [`String.prototype.replaceAll`][replace-all]                             | 2021                      |
+| [`import.meta`][import-meta]                                             | 2020                      |
+| [Nullish coalescing Operator][nullish-coalescing]                        | 2020                      |
+| [Optional Chaining][chaining]                                            | 2020                      |
+| [`for-in` mechanics][for-in-mechanics]                                   | 2020                      |
+| [`globalThis`][globalThis]                                               | 2020                      |
+| [`Promise.allSettled`][allsettled]                                       | 2020                      |
+| [`BigInt`][bigint]                                                       | 2020                      |
+| [`import()`][dynamic-import]                                             | 2020                      |
+| [`String.prototype.matchAll`][matchall]                                  | 2020                      |
+| [`Array.prototype.{flat,flatMap}`][flat]                                 | 2019                      |
+| [`String.prototype.{trimStart,trimEnd}`][trims]                          | 2019                      |
+| [Well-formed `JSON.stringify`][well-formed-stringify]                    | 2019                      |
+| [`Object.fromEntries`][object-from-entries]                              | 2019                      |
+| [`Function.prototype.toString` revision][function-to-string]             | 2019                      |
+| [`Symbol.prototype.description`][symbol-description]                     | 2019                      |
+| [JSON superset][json-superset]                                           | 2019                      |
+| [Optional `catch` binding][optional-catch]                               | 2019                      |
+| [Asynchronous Iteration][async-iteration]                                | 2018                      |
+| [`Promise.prototype.finally`][finally]                                   | 2018                      |
+| [RegExp Unicode Property Escapes][unicode-escapes]                       | 2018                      |
+| [RegExp Lookbehind Assertions][lookbehind]                               | 2018                      |
+| [Rest/Spread Properties][object-rest-spread]                             | 2018                      |
+| [RegExp named capture groups][named-groups]                              | 2018                      |
+| [`s` (`dotAll`) flag for regular expressions][dot-all]                   | 2018                      |
+| [Lifting template literal restriction][template-literal-lift]            | 2018                      |
+| [Shared memory and atomics][atomics]                                     | 2017                      |
+| [Async functions][async-await]                                           | 2017                      |
+| [Trailing commas in function parameter lists and calls][function-commas] | 2017                      |
+| [`Object.getOwnPropertyDescriptors`][object-gopds]                       | 2017                      |
+| [String padding][string-padding]                                         | 2017                      |
+| [`Object.values`/`Object.entries`][object-values-entries]                | 2017                      |
+| [Exponentiation operator][exponentiation]                                | 2016                      |
+| [`Array.prototype.includes`][array-includes]                             | 2016                      |
+| Lexical Declarations (`let`, `const`)                                   | 2015                      |
+| Arrow Functions                                                          | 2015                      |
+| Classes                                                                  | 2015                      |
+| Enhanced Object Literals                                                 | 2015                      |
+| Template Literals                                                        | 2015                      |
+| Destructuring Assignment                                                 | 2015                      |
+| Default Parameters                                                       | 2015                      |
+| Rest Parameters                                                          | 2015                      |
+| Spread Syntax                                                            | 2015                      |
+| Iterators and `for...of` loop                                            | 2015                      |
+| Generators                                                               | 2015                      |
+| Promises                                                                 | 2015                      |
+| Modules (ESM: `import`/`export`)                                         | 2015                      |
+| `Map`, `Set`, `WeakMap`, `WeakSet`                                       | 2015                      |
+| `Symbol` primitive type                                                  | 2015                      |
+| `Proxy` and `Reflect` APIs                                               | 2015                      |
+| `Object.assign`                                                          | 2015                      |
+| New `String` methods (e.g., `startsWith`, `endsWith`, `includes`, `repeat`) | 2015                      |
+| New `Array` methods (e.g., `Array.from`, `Array.of`, `find`, `findIndex`, `fill`, `copyWithin`) | 2015                      |
+| Typed Arrays                                                             | 2015                      |
+| Binary and Octal Literals                                                | 2015                      |
+| `__proto__` in object literals (standardized)                            | 2015                      |
+| `Object.is`                                                              | 2015                      |
+| `Number` properties and methods (e.g., `Number.isFinite`, `Number.isNaN`, `Number.EPSILON`) | 2015                      |
+| `Math` methods (e.g., `Math.trunc`, `Math.sign`, `Math.cbrt`, `Math.hypot`) | 2015                      |
+| Unicode regular expression (`u`) flag improvements                       | 2015                      |
+| Sticky (`y`) flag for regular expressions                                | 2015                      |
+
+
 * [Stage 1 Proposals](stage-1-proposals.md)
 * [Stage 0 Proposals](stage-0-proposals.md)
 * [Finished Proposals](finished-proposals.md)
